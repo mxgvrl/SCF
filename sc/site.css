@@ -23,7 +23,7 @@ body {
 
 .tab-content {
     padding: 10px;
-    background: beige;
+    background: #d2d2d2;
     width: 400px;
     height: 250px;
 }
@@ -38,7 +38,6 @@ body {
 }
 
 .tab-menu .tab > input[type="radio"] {
-    position: absolute;
     visibility: hidden;
 }
 
@@ -48,7 +47,7 @@ body {
     margin-right: 5px;
     cursor: pointer;
     position: relative;
-    background: #efef90;
+    background: #888888;
 }
 
 .tab-menu .tab-content {
@@ -57,24 +56,20 @@ body {
     width: 400px;
     padding: 25px;
     position: absolute;
-    top: 120px;
-    left: 670px;
-
+    top: 57px;
+    left: 0px;
     opacity:1;
-    transition: opacity 400ms ease-out;
 }
 
 .tab-menu>.tab>[id^="tab"]:checked + label {
     top: 0;
-    background: #d0a105;
+    background: #434343;
     color: #F5F5F5;
 }
 
 .tab-menu>.tab>[id^="tab"]:checked ~ [id^="tab-content"] {
     z-index: 1;
-
     opacity: 1;
-    transition: opacity 400ms ease-out;
 }
 
 .section-left {
@@ -89,9 +84,11 @@ body {
 }
 
 .section-right {
-    float: left;
-    margin-left: 155px;
+    float: right;
+    /*margin-left: 155px;*/
     margin-top: 10px;
+    position: relative;
+    width: 80%;
 }
 
 .footer {
