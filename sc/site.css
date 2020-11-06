@@ -93,3 +93,17 @@ body {
     margin-left: 155px;
     margin-top: 10px;
 }
+
+.footer {
+    position: absolute;
+    top: 480px;
+    width: 700px;
+}
+
+.footer>[id$="lorem"] {
+    float: left;
+}
+
+.footer>[id$="copyright"] {
+    float: right;
+}
